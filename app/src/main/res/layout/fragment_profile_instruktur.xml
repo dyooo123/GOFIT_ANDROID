@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ProfileInstrukturFragment">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="63dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_person"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="Profile Instruktur"
+        android:textColor="#585858"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_person"/>
+
+
+    <TextView
+        android:id="@+id/idInstruktur"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Id Instruktur"
+        android:textColor="#585858"
+        android:textSize="23dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_person"/>
+
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Nama Instruktur"
+        android:textColor="#585858"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idInstruktur" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Email"
+        android:textColor="#585858"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama"/>
+
+
+    <TextView
+        android:id="@+id/jenisKelamin"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Jenis Kelamin"
+        android:textColor="#585858"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email"/>
+
+
+
+    <TextView
+        android:id="@+id/No_Telpon"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Nomor Telepon"
+        android:textColor="#585858"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jenisKelamin"/>
+
+
+    <TextView
+        android:id="@+id/waktu_terlambat"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Waktu Terlambat"
+        android:textColor="#585858"
+        android:textSize="23dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/No_Telpon"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogoutInstruktur"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="5"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Log out"
+        android:textColor="@color/softBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/waktu_terlambat"
+        app:layout_constraintVertical_bias="0.358"
+        app:strokeColor="@color/darkBlue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHistoryInstruktur"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_weight="5"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Histori Aktivitas"
+        android:textColor="@color/softBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogoutInstruktur"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/darkBlue" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
